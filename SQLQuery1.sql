@@ -1,0 +1,1 @@
+﻿Select CustomerTbl.CustName from CustomerTbl join OrderTbl on CustomerTbl.CustId = OrderTbl.CustId where OrderTbl.BAmount=(Select max(BAmount) from OrderTbl)
